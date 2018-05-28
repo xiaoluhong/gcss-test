@@ -1,6 +1,6 @@
 version: '2'
 volumes:
-  {{ .nfsvolume }}:
+  ${nfsvolume}:
     external: true
     driver: rancher-nfs
   {{.imagevolume}}:
