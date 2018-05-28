@@ -2,10 +2,10 @@ version: '2'
 volumes:
   {{.Values.nfsvolume}}:
     external: true
-    driver: rancher-nfs
+    driver: ${driver}
   {{.Values.imagevolume}}:
     external: true
-    driver: rancher-nfs
+    driver: ${driver}
 services:
   gcss-programme:
     image: ${harborhost}/gcss/gcss-programme:1.0
