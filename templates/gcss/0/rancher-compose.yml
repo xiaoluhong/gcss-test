@@ -11,6 +11,16 @@ version: '2'
       type: "string"
       required: true
       default: "10.253.127.140"
+    - variable: "driver"
+      required: true
+      description: "存储驱动"
+      label: "Volume Driver:"
+      default: local
+      type: "enum"
+      options: 
+        - local
+        - rancher-nfs
+        - rancher-rbd
     - variable: "nfsvolume"
       description: "nfs卷名"
       label: "nfs volume"
