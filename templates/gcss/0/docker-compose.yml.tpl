@@ -3,7 +3,7 @@ volumes:
   ${nfsvolume}:
     external: true
     driver: rancher-nfs
-  {{imagevolume}}:
+  {{.imagevolume}}:
     external: true
     driver: rancher-nfs
 services:
