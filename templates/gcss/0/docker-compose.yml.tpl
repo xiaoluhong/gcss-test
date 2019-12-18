@@ -7,7 +7,7 @@ volumes:
     external: true
     driver: ${driver}
 services:
-  gcss-programme:
+  {{.Values.svc1}}:
     image: ${harborhost}/gcss/gcss-programme:1.0
     stdin_open: true
     volumes:
