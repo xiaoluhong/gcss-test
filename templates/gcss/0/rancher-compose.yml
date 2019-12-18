@@ -5,6 +5,12 @@ version: '2'
   description: |
     员福保.
   questions:
+    - variable: "svc1"
+      description: "svc1"
+      label: "svc1"
+      type: "string"
+      required: true
+      default: "gcss-programme"
     - variable: "harborhost"
       description: "harbor ip地址"
       label: "harbor host"
@@ -34,7 +40,7 @@ version: '2'
       required: true
       default: "gcssimg"
 services:
-  gcss-programme:
+  ${svc1}:
     scale: 1
     start_on_create: true
     health_check:
